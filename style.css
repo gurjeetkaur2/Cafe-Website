@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+}
+nav{
+    height: 50px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo a{
+    font-size: 23px;
+    color: whitesmoke;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: #1b1b1b; 
+    background: #fff;
+}
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+
+
+
+/* home page main content */
+.home-image img{
+    width:85%;
+    height:auto;
+    display: block; 
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.message{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.message h3{
+    font-weight: 400px;
+    color:black;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.message p{
+    color:black;
+    text-indent: 15px;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 5px 10px; 
+    text-align: center;
+    margin: 10px;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(229, 174, 174);
+    padding: 10px;
+}
+.details h4{
+    font-weight: 300px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px;
+    padding: 8px;
+}
+.details p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 3px;
+    padding: 6px;
+}
+
+
+/* this css is for about page */
+
+.about-cafe{
+    margin: 20px;
+    min-height: 20vh; 
+    padding: 3vw; 
+}
+.about-cafe h3{
+    font-weight: 200px;
+    color:black;
+    font-size: 3vw;
+    text-align: center;
+    padding: 8px;
+}
+.about-cafe p{
+    color:black;
+    text-indent: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 5px 10px;
+}
+.about-image img{
+    width:75%;
+    height:auto;
+    display: block; 
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+/* about page css ends here */
+
+
+
+/* this css is for menu page */
+
+.menu-page h1{
+    text-align: center;
+    color: darksalmon;
+    font-size: 2rem;
+    font-weight: 400px;
+    font-style: italic;
+    padding: 20px;
+}
+.menu-page p{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.breakfast-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px dotted black;
+} 
+.breakfast-menu img{
+    width: 50%;
+    height: auto;
+    margin: 3px;
+}
+.breakfast-items h3{ 
+    text-align: center;
+    font-weight: 200px;
+    color: darksalmon;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.dish-name{ 
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+    margin: auto;
+}
+.breakfast-items p{ 
+    font-size: 1rem;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: .01em;
+    font-size: 1rem;
+    line-height: 1.1;
+    padding: 10px 15px;
+    margin: auto;
+} 
+.lunch-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px dotted black;
+    padding: 15px;
+}
+.lunch-menu img{
+    width: 50%;
+    height: auto;
+    margin: 3px;
+    
+}
+.lunch-items h3{ 
+    text-align: center;
+    font-weight: 200px;
+    color: darksalmon;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.lunch-items p{ 
+    font-size: 1rem;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: .01em;
+    font-size: 1rem;
+    line-height: 1.1;
+    padding: 10px 15px;
+    margin: auto;
+}
+.drink-menu{
+    text-align: center;
+    margin: 15px;
+}
+.drink-menu h3{
+    font-weight: 200px;
+    color: darksalmon;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.coffee-item{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    border-bottom: 1px dotted black;
+}
+.coffee h4{
+    text-align: center;
+    color: rgb(116, 40, 12);
+    font-size: 1rem;
+    padding: 10px;
+}
+.coffee p{
+    text-align: center;
+    color: rgb(116, 40, 12);
+    font-size: 1rem;
+    padding: 10px;
+}
+.smoothies-juice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.smoothies-juice h4{
+    text-align: center;
+    color: rgb(116, 40, 12);
+    font-size: 1rem;
+    padding: 20px;
+}
+.smoothies h5{
+    text-align: center;
+    color: rgb(116, 40, 12);
+    font-size: 1rem;
+    padding: 10px;
+}
+.smoothies p{
+    text-align: center;
+    color: rgb(30, 14, 8);
+    font-size: 1rem;
+    padding: 10px;
+}
+.juice p{
+    text-align: center;
+    color: rgb(30, 14, 8);
+    font-size: 1rem;
+    padding: 10px;  
+}
+/* menu page css end here */
+
+
+/* reservation page start here */
+.container{
+    margin: auto; 
+    padding: 25px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.heading{
+    color: darksalmon;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400px;
+    padding: 20px;
+}
+
+
+
+.slider{
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    padding: auto; 
+    position: relative; 
+}
+.slider .left-slide, .slider .right-slide{ 
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+  
+.slider .left-slide:hover, .slider .right-slide:hover{
+    box-shadow: 0px 0px 10px red;
+    background-color: lightblue;
+}
+.slider .left-slide{
+    left: 30px;
+}
+.slider .right-slide{
+    right: 30px;
+}
+  
+.item {
+    width: 60%;
+    height: 200px;
+    margin: auto;
+} 
+.item img{
+    width: 100%;
+}
+.slider .slider-items .item{
+    display: none;
+    position: relative;
+}
+.slider .slider-items .item .caption{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+.slider .slider-items .active{
+    display: block;
+    width: 600px;
+    height: 380px;
+    margin-top: 5px;
+    object-fit: contain;
+    overflow: hidden;
+    margin: auto;
+}
+  
+#form {
+    width: 400px;
+    margin: 15px auto 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: rgb(183, 236, 237);
+}
+
+#form h1 {
+    color: darksalmon;
+    padding: 15px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, .95);
+    color: #ffff; 
+    width: 70%;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .3 ease;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+label{
+    font-size: 15px;
+    padding: 2px;
+}
+
+.input-control input {
+    border: 1px solid black;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 80%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+/* .input-control.success input {
+    border-color: #09c372;
+} */
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 15px;
+    height: 13px;
+    padding: 5px;
+}
+
+button:hover{
+    transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+/* reservation page ends here */
+
+
+/* gallery page starts here */
+.gallery-heading{
+    color: darksalmon;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400px;
+    padding: 20px;
+}
+.gallery {
+    border: 2px solid #ccc;
+}
+  
+.gallery:hover {
+    border: 2px solid #777;
+}
+  
+.gallery img {
+    width: 100%;
+    height: 50%;
+    padding: 10px auto;
+    margin: auto;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+  
+.responsive {
+    padding: 16px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* gallery page css ends here */
+  
+
+/* footer css starts here */
+.footer{
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: wheat;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0; 
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul a{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 940px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: cyan;
+        background:none;
+    }
+}
